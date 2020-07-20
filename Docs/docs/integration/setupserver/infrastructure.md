@@ -1,0 +1,4 @@
+---
+id: infrastructure
+title: Инфраструктура
+---
