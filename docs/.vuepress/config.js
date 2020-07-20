@@ -29,9 +29,9 @@ module.exports = {
    */
   themeConfig: {
 	logo: '/Т2Plus.svg',
-    repo: 't2softuser/docs',
+    repo: 't2plus/docs',
 	
-	//docsRepo: 't2softuser/docs',
+	//docsRepo: 't2plus/docs',
 	docsDir: 'docs',
 	docsBranch: 'develop',
     editLinks: true,    

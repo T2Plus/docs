@@ -7,7 +7,7 @@
     "name": "T2 Soft",
     "email": "docs@t2plus.ru"
   },
-  "repository": "repo/T2 Documentation",
+  "repository": "t2plus/docs",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
