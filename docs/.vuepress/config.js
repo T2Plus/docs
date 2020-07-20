@@ -36,7 +36,7 @@ module.exports = {
 	docsBranch: 'develop',
     editLinks: true,    
     editLinkText: 'Помоги нам улучшить эту страницу!',
-    lastUpdated: 'Last Updated',
+    lastUpdated: 'Обновлено',
 	nextLinks: true,
     // default value is true. Set it to false to hide prev page links on all pages
     prevLinks: true,
@@ -137,8 +137,15 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-	'@vuepress/last-updated'
+    '@vuepress/back-to-top',
+    '@vuepress/medium-zoom',
+	[
+		'@vuepress/last-updated',
+		{
+			dateOptions:{
+			hour12: false
+			}
+		}
+	]
   ]
 }
