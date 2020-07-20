@@ -32,7 +32,7 @@ module.exports = {
     repo: 't2softuser/docs',
 	
 	//docsRepo: 't2softuser/docs',
-	//docsDir: 'docs',
+	docsDir: 'docs',
 	docsBranch: 'develop',
     editLinks: true,    
     editLinkText: 'Помоги нам улучшить эту страницу!',
