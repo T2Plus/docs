@@ -29,11 +29,14 @@ module.exports = {
    */
   themeConfig: {
 	logo: '/Т2Plus.svg',
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    repo: 't2softuser/docs',
+	
+	//docsRepo: 't2softuser/docs',
+	//docsDir: 'docs',
+	docsBranch: 'develop',
+    editLinks: true,    
+    editLinkText: 'Помоги нам улучшить эту страницу!',
+    lastUpdated: 'Last Updated',
 	nextLinks: true,
     // default value is true. Set it to false to hide prev page links on all pages
     prevLinks: true,
@@ -136,5 +139,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+	'@vuepress/last-updated'
   ]
 }
