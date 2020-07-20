@@ -1,13 +1,8 @@
-# T2 Documentation
-
-> Descr
-
-## Development
-
-```bash
-yarn dev
-yarn build
-```
-
-For more details, please head VuePress's [documentation](https://v1.vuepress.vuejs.org/).
-
+---
+home: false
+heroImage: https://v1.vuepress.vuejs.org/hero.png
+tagline: Descrjghgjhgjghjghjhgj
+actionText: Quick Start →
+actionLink: /integration/
+footer: Made by T2 Soft with ❤️
+---
