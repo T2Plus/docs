@@ -128,6 +128,62 @@ module.exports = {
 					]
 				},					
 				'/integration/keylocator',			
+				{
+					title: 'Nuget-пакеты',
+					// path: '/integration/gettingstarted/',
+					collapsable: true,
+					children: [
+						'/integration/nuget/local',
+						'/integration/nuget/server'
+					]
+				},					
+				'/integration/vcs',		
+				'/integration/redis',		
+				{
+					 title: 'Журнализация',
+					 // path: '/integration/gettingstarted/',
+					 collapsable: true,
+					 children: [
+						 '/integration/logging/nlog',
+						 '/integration/logging/cls'
+					 ]
+				},							
+				{
+					 title: 'Кластеризация',
+					 // path: '/integration/gettingstarted/',
+					 collapsable: true,
+					 children: [
+					 ]
+				},							
+				{
+					title: 'Управление передачей данных',
+					// path: '/integration/gettingstarted/',
+					collapsable: true,
+					children: [
+						'/integration/datatransfer/changestracking',
+						'/integration/datatransfer/scenario'
+					]
+				},											
+				{
+					title: 'Разработка',
+					// path: '/integration/gettingstarted/',
+					collapsable: true,
+					children: [
+						'/integration/develop/libraries',
+						'/integration/develop/model',
+						'/integration/develop/adapter'
+					]
+				},							
+				{
+					title: 'Примеры',
+					// path: '/integration/samples/',
+					collapsable: true,
+					children: [
+						'/integration/samples/sample1',
+						'/integration/samples/sample2',
+						'/integration/samples/sample3'
+					]
+				},							
 			]
 		}
     ]
