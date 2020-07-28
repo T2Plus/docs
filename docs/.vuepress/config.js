@@ -183,9 +183,18 @@ module.exports = {
 						'/integration/samples/sample2',
 						'/integration/samples/sample3'
 					]
-				},							
+				}
 			]
-		}
+		},
+		{
+			title: 'Т2 Журнализация',   // required
+			path: '/logging/',      // optional, link of the title, which should be an absolute path and must exist
+			collapsable: false, // optional, defaults to true
+			sidebarDepth: 0,    // optional, defaults to 1			
+			children: [				
+				'/logging/test'
+			]
+		}			
     ]
   },
 
