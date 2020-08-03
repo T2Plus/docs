@@ -57,7 +57,7 @@ module.exports = {
 		{
 			title: 'Т2 Интеграция',   // required
 			path: '/integration/',      // optional, link of the title, which should be an absolute path and must exist
-			collapsable: false, // optional, defaults to true
+			collapsable: true, // optional, defaults to true
 			sidebarDepth: 0,    // optional, defaults to 1
 			children: [				
 				'/integration/terms',
@@ -186,15 +186,15 @@ module.exports = {
 				}
 			]
 		},
-		// {
-			// title: 'Т2 Журнализация',   // required
-			// path: '/logging/',      // optional, link of the title, which should be an absolute path and must exist
-			// collapsable: false, // optional, defaults to true
-			// sidebarDepth: 0,    // optional, defaults to 1			
-			// children: [				
-				// '/logging/test'
-			// ]
-		// }			
+		{
+			title: 'Т2 Журнализация',   // required
+			path: '/logging/',      // optional, link of the title, which should be an absolute path and must exist
+			collapsable: true, // optional, defaults to true
+			sidebarDepth: 0,    // optional, defaults to 1			
+			children: [				
+				'/logging/terms'
+			]
+		}		
     ]
   },
 
