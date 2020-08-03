@@ -1,11 +1,11 @@
 {
   "name": "Documentation",
   "version": "0.0.1",
-  "description": "Descr",
+  "description": "Документация",
   "main": "index.js",
   "authors": {
     "name": "T2 Soft",
-    "email": "docs@t2plus.ru"
+    "email": "market@t2plus.ru"
   },
   "repository": "t2plus/docs",
   "scripts": {

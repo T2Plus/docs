@@ -1,6 +1,6 @@
 # T2 Documentation
 
-> Descr
+> Документация
 
 ## Development
 
