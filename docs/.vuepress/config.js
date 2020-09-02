@@ -211,6 +211,12 @@ module.exports = {
 			hour12: false
 			}
 		}
-	]
+	],
+	[
+		'vuepress-plugin-google-tag-manager',
+		{
+			gtm: 'GTM-N627LRS'
+		}
+	] 
   ]
 }
