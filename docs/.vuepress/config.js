@@ -70,7 +70,16 @@ module.exports = {
 					children: [
 					  '/integration/gettingstarted/prerequisites',
 					  '/integration/gettingstarted/setup',
-					  '/integration/gettingstarted/helloworld'
+					  //'/integration/gettingstarted/helloworld',
+					 {
+						title: 'Hello World!',
+						 path: '/integration/gettingstarted/helloworld',
+						collapsable: true,
+						children: [
+						'/integration/gettingstarted/preparedb',
+						'/integration/gettingstarted/setupmodel'						
+						]
+					 },					  
 					]
 				},
 				'/integration/systemmetadata',
