@@ -58,28 +58,28 @@ module.exports = {
 			title: 'Т2 Интеграция',   // required
 			path: '/integration/',      // optional, link of the title, which should be an absolute path and must exist
 			collapsable: false, // optional, defaults to true
-			sidebarDepth: 0,    // optional, defaults to 1
+			sidebarDepth: 1,    // optional, defaults to 1
 			children: [				
 				'/integration/terms',
 				'/integration/commoninfo',
 				'/integration/howitworks',
 				{
+					title: 'Установка',
+					// path: '/integration/install/',
+					collapsable: true,
+					children: [
+					  '/integration/install/iis',
+					  '/integration/install/nomad',
+					  '/integration/install/docker'
+					]
+				},				
+				{
 					title: 'Начало работы',
 					// path: '/integration/gettingstarted/',
 					collapsable: true,
-					children: [
-					  '/integration/gettingstarted/prerequisites',
-					  '/integration/gettingstarted/setup',
-					  //'/integration/gettingstarted/helloworld',
-					 {
-						title: 'Hello World!',
-						 path: '/integration/gettingstarted/helloworld',
-						collapsable: true,
-						children: [
-						'/integration/gettingstarted/preparedb',
-						'/integration/gettingstarted/setupmodel'						
-						]
-					 },					  
+					children: [					  
+					  '/integration/gettingstarted/preparedb',
+					  '/integration/gettingstarted/setupmodel'
 					]
 				},
 				'/integration/systemmetadata',

@@ -1,7 +1,7 @@
 ---
 id: howitworks
 title: Как это работает?
-
+sidebarDepth: 0
 ---
 
 ## Алгоритм передачи данных
