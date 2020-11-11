@@ -1,13 +1,18 @@
 ---
-id: setup
-title: Установка
+id: nomad
+title: Nomad
+sidebarDepth: 0
 ---
 
-## IIS
+## Предварительные требования
 
-Раздел в разработке.
+1. [Пакет SDK для .NET Core 3.1 или более поздней версии](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+2. [RabbitMQ](https://www.rabbitmq.com/) и совместимая с ним версия [Erlang](https://www.erlang.org/)
+3. [Таблица совместимости версий RabbitMQ и Erlang](https://www.rabbitmq.com/which-erlang.html)
+4. [Git](https://git-scm.com/)
 
-## Nomad
+
+## Установка
 
 Для установки **Т2 Интеграция** с использованием **Nomad** скачайте пакет для развертывания [T2.Integration.Nomad](https://t2plus.ru/products/dip/) и распакуйте его у себя на локальном диске. Для простоты настройки желательно распаковать архив **Т2 Интеграция** в корень диска.
 
@@ -186,7 +191,3 @@ title: Установка
 
 
 ![img](../_assets/XUM.png)
-
-## Docker
-
-Раздел в разработке.
