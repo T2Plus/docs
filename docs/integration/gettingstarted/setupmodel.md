@@ -37,17 +37,17 @@ sidebarDepth: 0
 
   "ConnectionStrings": {
     "AdapterConnectionString": {
-      "ConnectionString": "Data Source=BY01-1229.topsoft.local\\SQL2016;Initial Catalog=T2.DemoSourceDB;Integrated Security=True",
+      "ConnectionString": "Data Source=<sql server instance>;Initial Catalog=T2.DemoSourceDB;Integrated Security=True",
       ...
     },
     "DIPConnectionString": {
-      "ConnectionString": "Data Source=BY01-1229.topsoft.local\\SQL2016;Initial Catalog=T2.DemoSourceDB.Adapter;Integrated Security=True",
+      "ConnectionString": "Data Source=<sql server instance>;Initial Catalog=T2.DemoSourceDB.Adapter;Integrated Security=True",
       ...
     },
     //нужен только в бизнес адаптере
     //находится тут для того, чтобы пользователь мог менять конфигурацию
     "KeyLocator": {
-      "ConnectionString": "Data Source=BY01-1229.topsoft.local\\SQL2016;Initial Catalog=T2.DIP.KeyLocator;Integrated Security=True",
+      "ConnectionString": "Data Source=<sql server instance>;Initial Catalog=T2.DIP.KeyLocator;Integrated Security=True",
       ...
     }
   },
@@ -97,17 +97,17 @@ sidebarDepth: 0
 
   "ConnectionStrings": {
     "AdapterConnectionString": {
-      "ConnectionString": "Data Source=BY01-1229.topsoft.local\\SQL2016;Initial Catalog=T2.DemoTargetDB;Integrated Security=True",
+      "ConnectionString": "Data Source=<sql server instance>;Initial Catalog=T2.DemoTargetDB;Integrated Security=True",
       ...
     },
     "DIPConnectionString": {
-      "ConnectionString": "Data Source=BY01-1229.topsoft.local\\SQL2016;Initial Catalog=T2.DemoTargetDB.Adapter;Integrated Security=True",
+      "ConnectionString": "Data Source=<sql server instance>;Initial Catalog=T2.DemoTargetDB.Adapter;Integrated Security=True",
       ...
     },
     //нужен только в бизнес адаптере
     //находится тут для того, чтобы пользователь мог менять конфигурацию
     "KeyLocator": {
-      "ConnectionString": "Data Source=BY01-1229.topsoft.local\\SQL2016;Initial Catalog=T2.DIP.KeyLocator;Integrated Security=True",
+      "ConnectionString": "Data Source=<sql server instance>;Initial Catalog=T2.DIP.KeyLocator;Integrated Security=True",
       ...
     }
   },
