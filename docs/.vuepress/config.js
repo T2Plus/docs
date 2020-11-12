@@ -68,9 +68,9 @@ module.exports = {
 					// path: '/integration/install/',
 					collapsable: true,
 					children: [
-					  '/integration/install/iis',
+					  // '/integration/install/iis',
 					  '/integration/install/nomad',
-					  '/integration/install/docker'
+					  // '/integration/install/docker'
 					]
 				},				
 				{
