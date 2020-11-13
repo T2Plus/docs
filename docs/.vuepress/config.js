@@ -88,17 +88,9 @@ module.exports = {
 					// path: '/integration/gettingstarted/',
 					collapsable: true,
 					children: [
-						'/integration/model/systems',
-						'/integration/model/entities',
-						'/integration/model/masterkeys',
-						'/integration/model/pipelines',
-						'/integration/model/filters',
-						'/integration/model/mappings',
-						'/integration/model/extensions',
-						'/integration/model/usermodel',
-						'/integration/model/workmodel',
-						'/integration/model/ba',
-						'/integration/model/triggers',
+						'/integration/model/modelparts',
+						'/integration/model/modellevels',	
+						'/integration/model/runtime',	
 						'/integration/model/order',
 						'/integration/model/activation',
 						'/integration/model/history'				
@@ -123,9 +115,9 @@ module.exports = {
 					collapsable: true,
 					children: [
 						'/integration/adapters/dbadapter',
-						'/integration/adapters/odataadapter',
+						//'/integration/adapters/odataadapter',
 						'/integration/adapters/adadapter',
-						'/integration/adapters/1cadapter',
+						//'/integration/adapters/1cadapter',
 						'/integration/adapters/galammadapter',
 						'/integration/adapters/galeamadapter',
 						'/integration/adapters/galerpadapter',
@@ -143,7 +135,7 @@ module.exports = {
 					collapsable: true,
 					children: [
 						'/integration/nuget/local',
-						'/integration/nuget/server'
+						//'/integration/nuget/server'
 					]
 				},					
 				'/integration/vcs',		
@@ -157,13 +149,13 @@ module.exports = {
 						 '/integration/logging/cls'
 					 ]
 				},							
-				{
-					 title: 'Кластеризация',
-					 // path: '/integration/gettingstarted/',
-					 collapsable: true,
-					 children: [
-					 ]
-				},							
+				// {
+					 // title: 'Кластеризация',
+					 // // path: '/integration/gettingstarted/',
+					 // collapsable: true,
+					 // children: [
+					 // ]
+				// },							
 				{
 					title: 'Управление передачей данных',
 					// path: '/integration/gettingstarted/',
