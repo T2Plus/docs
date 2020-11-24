@@ -137,9 +137,17 @@ module.exports = {
 						'/integration/nuget/local',
 						//'/integration/nuget/server'
 					]
+				},
+				{
+					title: 'Блокировка',
+					path: '/integration/lock/',
+					collapsable: true,
+					children: [
+						'/integration/lock/grpc',
+						//'/integration/lock/redis'
+					]
 				},					
 				'/integration/vcs',		
-				'/integration/redis',		
 				{
 					 title: 'Журнализация',
 					 // path: '/integration/gettingstarted/',
