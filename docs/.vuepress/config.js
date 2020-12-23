@@ -190,7 +190,8 @@ module.exports = {
 					children: [
 						'/integration/samples/sample1',
 						'/integration/samples/sample2',
-						'/integration/samples/sample3'
+						'/integration/samples/sample3',
+						'/integration/samples/T10111'
 					]
 				}
 			]
