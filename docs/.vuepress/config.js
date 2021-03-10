@@ -114,6 +114,8 @@ module.exports = {
 					// path: '/integration/gettingstarted/',
 					collapsable: true,
 					children: [
+						'/integration/adapters/overview',
+						'/integration/adapters/configuration',
 						'/integration/adapters/dbadapter',
 						//'/integration/adapters/odataadapter',
 						'/integration/adapters/adadapter',
