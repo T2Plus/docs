@@ -1,0 +1,4 @@
+---
+id: configuration
+title: Конфигурация
+---

@@ -24,19 +24,21 @@ title: Компоненты
 4. Прием сообщений, получение и преобразование объектов для передачи в объекты своей системы.
 
 
-Перечень базовых адаптеров:
+Базовые адаптеры:
 1. [Адаптер к БД](adapters\dbadapter.md)
 2. [Адаптер к OData](adapters\odataadapter.md)
-3. [Адаптер к Active Directory](adapters\adadapter.md)
-4. [Адаптер к 1C](adapters\1cadapter.md)
-5. [Адаптер к Галактика AMM](adapters\galammadapter.md)
-6. [Адаптер к Галактика EAM](adapters\galeamadapter.md)
-7. [Адаптер к Галактика ERP](adapters\galerpadapter.md)
-8. [Адаптер к Галактика FM](adapters\galfmadapter.md)
-9. [Адаптер к Галактика HCM](adapters\galhcmadapter.md)
-10. [Адаптер к T2 APM](adapters\t2apmadapter.md)
-11. [Адаптер к T2 ERP](adapters\t2erpadapter.md)
-12. [Адаптер к T2 SPM](adapters\t2spmadapter.md)
+3. [Адаптер к 1C](adapters\1cadapter.md)
+
+Дополнительные адаптеры: 
+1. [Адаптер к Active Directory](adapters\adadapter.md)
+2. [Адаптер к Галактика AMM](adapters\galammadapter.md)
+3. [Адаптер к Галактика EAM](adapters\galeamadapter.md)
+4. [Адаптер к Галактика ERP](adapters\galerpadapter.md)
+5. [Адаптер к Галактика FM](adapters\galfmadapter.md)
+6. [Адаптер к Галактика HCM](adapters\galhcmadapter.md)
+7. [Адаптер к T2 APM](adapters\t2apmadapter.md)
+8. [Адаптер к T2 ERP](adapters\t2erpadapter.md)
+9. [Адаптер к T2 SPM](adapters\t2spmadapter.md)
 
 ## Брокер сообщений
 
