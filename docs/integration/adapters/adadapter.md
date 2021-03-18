@@ -3,25 +3,27 @@ id: adadapter
 title: Адаптер к Active Directory
 ---
 
-## Назначение
+## Обзор
 
-**Адаптер к Active Directory** - позволяет подключать хранилище [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) к **Т2 Интеграция**.
+**Адаптер к Active Directory** - позволяет подключать [службу каталогов](https://ru.wikipedia.org/wiki/Служба_каталогов) корпорации [Microsoft](https://ru.wikipedia.org/wiki/Microsoft) для операционных систем семейства [Windows Server](https://ru.wikipedia.org/wiki/Windows_Server) к **Т2 Интеграция**.
 
-
-
-## Описание возможностей
+Поддерживаются предустановленные [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) с версии *Windows Server 2008 R2*.
 
 При первом запуске или после обновления, адаптер для [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) регистрируется в DIP сервере и обновляет в нём свои метаданные модели классов прикладной системы. Данные классы и их свойства используются для настройки модели интеграции. 
 
+Предустановленная модель данных позволяет работать с такими типами данных, как:
+
+- OrganizationUnit
+- User
+- Group
+
+Метаданные, предоставляемые адаптером, так же могут быть сгенерированны непосредственно под текущую настройку схемы данных [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory). Для этого необходимо в настройках конфигурации адаптера подключить и настроить микросервис `T2.DIP.Adapter.AD.Services.Prepare.AdPreparerService`.
+
 Так же на ряду с предаставлением метаданных данных, адаптер к [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) обрабатывает запросы от сервера на выполнения манипуляций с данными в прикладной системе, а также обладает возможностью отслеживания изменений в прикладной системе и пересылку информации об изменениях в DIP сервер, при помощи брокера сообщений.
 
-## Особенности
+Особенностью данного адаптера является спецефическая реализация отслеживания изменений, в сравнении с адаптерами работающими с базами данных прикладных систем на прямую. Отслеживание реализуется на механизма сценариев и триггеров, настраиваемых в модели интеграции. При истечении заданного интервала времени производится запрос к [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) и получаются изменённые данные, настроенные в триггере модели интеграции, за период времени от предыдущего запроса. После обработки данных запоминается время выполнения текущего запроса, для выборки по нему изменений в следующем запросе.
 
-Особенностью данного адаптера является спецефическая реализация отслеживания изменений, в сравнении с адаптерами работающими с базами данных прикладных систем на прямую.
-
-Для того что бы адаптер к [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) отслеживал изменения в информационной системе, в его конфигурации необходимо подключить микросервис `T2.DIP.Adapter.AD.MetadataProvider.AdMetadataProvider` и в его настройках добавить в список `Jobs` задачу `TransferChangedDataAd`. Данная задача переопределяет аналогичную задачу `TransferChangedData`, реализованную и используемую для других адаптеров информационных систем, но не подходящую под специфику [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory).
-
-
+Для подключения механизма отслеживания, в его конфигурации адаптера к [Active Directory](https://ru.wikipedia.org/wiki/Active_Directory) необходимо подключить микросервис `T2.DIP.Adapter.AD.MetadataProvider.AdMetadataProvider` и в его настройках добавить в список `Jobs` задачу `TransferChangedDataAd`.
 
 ## Параметры конфигурации
 
@@ -119,23 +121,6 @@ title: Адаптер к Active Directory
       "LogLevel": {
         "Microsoft": "Information"
       }
-    },
-    "AzureAppServicesFile": {
-      "IncludeScopes": true,
-      "LogLevel": {
-        "Default": "Warning"
-      }
-    },
-    "AzureAppServicesBlob": {
-      "IncludeScopes": true,
-      "LogLevel": {
-        "Microsoft": "Information"
-      }
-    },
-    "ApplicationInsights": {
-      "LogLevel": {
-        "Default": "Information"
-      }
     }
   }
 }
@@ -150,8 +135,6 @@ title: Адаптер к Active Directory
   - Debug
   - EventSource
   - EventLog
-  - AzureAppServicesFile
-  - AzureAppServicesBlob
   - ApplicationInsights
 
 
