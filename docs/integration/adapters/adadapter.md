@@ -20,7 +20,7 @@ title: Адаптер к Active Directory
 ```json
 {
 	"Services": [
-		{
+		{	// Сервис предоставления сведений об информационной сиситеме.
 			"AssemblyQualifiedName": "T2.DIP.Adapter.AD.Services.InformationSystemService.AdInformationSystemService, T2.DIP.Adapter.AD",
 			"Settings": {
 				"LdapServer": "10.1.12.40",
@@ -30,7 +30,7 @@ title: Адаптер к Active Directory
 				"DeletedRecordsNode": "CN=Deleted Objects,DC=test,DC=local"
 			}
 		},
-		{
+		{	// Сервис предоставления метаданных и манипуляции ими.
 			"AssemblyQualifiedName": "T2.DIP.Adapter.AD.MetadataProvider.AdMetadataProvider, T2.DIP.Adapter.AD",
 			"Settings": {
 				"HeartbeatInterval": 5000,
@@ -42,7 +42,7 @@ title: Адаптер к Active Directory
 				]
 			}
 		},
-		{
+		{	// Сервис предварительной подготовки адаптера, генерации метаданных.
 			"AssemblyQualifiedName": "T2.DIP.Adapter.AD.Services.Prepare.AdPreparerService, T2.DIP.Adapter.AD",
 			"Settings": {
 				"ModelClasses": [
