@@ -7,8 +7,9 @@ sidebarDepth: 0
 ## Предварительные требования
 
 1. [Пакет SDK для .NET Core 3.1 или более поздней версии](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-2. [RabbitMQ](https://www.rabbitmq.com/) и совместимая с ним версия [Erlang](https://www.erlang.org/)
-3. [Таблица совместимости версий RabbitMQ и Erlang](https://www.rabbitmq.com/which-erlang.html)
+2. [Erlang OTP](https://www.erlang.org/)
+3. [RabbitMQ Server](https://www.rabbitmq.com/)
+- Версии Erlang и RabbitMQ должны быть  совместимы согласно [Таблицы совместимости версий RabbitMQ и Erlang](https://www.rabbitmq.com/which-erlang.html)
 4. [Git](https://git-scm.com/)
 
 
@@ -23,7 +24,8 @@ sidebarDepth: 0
 2. Из Command Prompt от имени Администратора запустить файл **T2.Integration\Nginx\\!stop.cmd**, затем запустить файл **T2.Integration\Nginx\\!start.cmd** тоже от имени Администратора. В результате должен запуститься браузер со страницей [http://localhost:880](http://localhost:880) (если браузер не открылся, то необходимо запустить его вручную и указать в нем указанную страницу). На указанной странице должна быть информация вида:
 ![img](../_assets/T2Deploy.png)
 
->>Если при выполнении команд !stop и !start возникнет ошибка (как ниже) добавьте явно путь на nginx.exe в cmd-файл
+>>Если при выполнении команд **!stop** и **!start** возникнет ошибка (как ниже) добавьте явно путь на **nginx.exe** в cmd-файл
+>>
 >>**nginx: [error] OpenEvent("Global\ngx_stop_7060") failed (2: The system cannot find the file specified)**
 
 
@@ -34,12 +36,14 @@ sidebarDepth: 0
 ### Развертывание локального кластера Nomad
 
 1. **Внимание!** Если на компьютере отключено выполнение сценариев **PowerShell** либо имеются ограничения на их выполнение, то необходимо разрешить выполнение сценариев **PowerShell** (подробнее см. [здесь](https://winnote.ru/security/160-windows-powershell.-vypolnenie-scenariev-otklyucheno-v-etoy-sisteme.html)).
-
-  В качестве рекомендуемого примера:
-    1) Запустить консоль **PowerShell** от имени Администратора (в строке системного поиска набрать «PowerShell»).
-    2) Выполнить следующие команды в консоли **PowerShell**:
-         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+>>
+>>  В качестве рекомендуемого примера:
+>>  - Запустить консоль **PowerShell** от имени Администратора (в строке системного поиска набрать «PowerShell»).
+>>  - Выполнить следующие команды в консоли **PowerShell**
+>>  
+>>         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+>>         
+>>         Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 
 2. Запустить на выполнение файл **T2.Integration\Cluster\_installcluster.cmd** от имени Администратора.
 
@@ -53,7 +57,10 @@ sidebarDepth: 0
 
 далее нажать два раза **Enter**.
 
-5. После развертывания кластера должен запуститься браузер со страницами [http://127.0.0.1:8500/ui/dc1/services](http://127.0.0.1:8500/ui/dc1/services) (главная страница сервиса **Consul**) и [http://<имя_компьютера>.node.devnomad:4646/ui/jobs](http://имя_компьютера.node.devnomad:4646/ui/jobs) (главная страница средства оркестрации **Nomad**). Если браузер не открылся, то нужно запустить его вручную и открыть указанные страницы, заменив **<имя_компьютера>** на имя своего компьютера. Вид указанных страниц:
+5. После развертывания кластера должен запуститься браузер со страницами
+ - [http://127.0.0.1:8500/ui/dc1/services](http://127.0.0.1:8500/ui/dc1/services) (главная страница сервиса **Consul**) и
+ - [http://<имя_компьютера>.node.devnomad:4646/ui/jobs](http://имя_компьютера.node.devnomad:4646/ui/jobs) (главная страница средства оркестрации **Nomad**).
+<p>Если браузер не открылся, то нужно запустить его вручную и открыть указанные страницы, заменив **<имя_компьютера>** на имя своего компьютера.</p> Вид указанных страниц:
 
 
 ![img](../_assets/Consul.png)
